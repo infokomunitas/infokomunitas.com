@@ -1,0 +1,8 @@
+load excel begin
+load excel success
+parse data excel success
+clean data
+referenceData ready
+parseMasterData success
+====TRANSACTION READY====
+excecute query =>s:156:"INSERT INTO taxon (short_namecode,id,morphotype,fam,gen,sp,subtype,ssp,auth) VALUES ('Dillenia_sufructicosa','345','','','Dillenia','sufructicosa','','','')";

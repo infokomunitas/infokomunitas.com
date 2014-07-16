@@ -1,0 +1,23 @@
+====one by one: TRANSACTION READY====
+====onebyone: success inserting data====
+====one by one: TRANSACTION READY====
+====one by one: TRANSACTION READY====
+====onebyone: success inserting data====
+====one by one: TRANSACTION READY====
+====onebyone: success inserting data====
+====one by one: TRANSACTION READY====
+====onebyone: success inserting data====
+====one by one: TRANSACTION READY====
+token ori : 81fcb3efeec2733988709ae6fbcd0418dd4bf69f
+a:5:{s:5:"email";s:18:"widiw374@gmail.com";s:8:"username";s:8:"2lhJBJJn";s:5:"token";s:40:"b3c07e78fb6e0f98d733bccd29292ec5a7aa30d5";s:7:"validby";s:40:"81fcb3efeec2733988709ae6fbcd0418dd4bf69f";s:7:"regfrom";i:2;}
+ready to send mail
+status send = 1
+onebyone: generate account success a:3:{s:7:"message";s:17:"success send mail";s:6:"result";b:1;s:3:"res";b:1;}
+onebyone: send account to email success
+username EXIST/
+==success create user==
+czoyMTE6ImE6NTp7czo1OiJlbWFpbCI7czoxNjoib3Zhbjg5QGdtYWlsLmNvbSI7czo4OiJ1c2VybmFtZSI7czo3OiJvdmFuY29wIjtzOjU6InRva2VuIjtzOjQwOiI2OWM3MTg2OWM0NDUwYjY2ZmVlNWIxNDUxYzQ3MGMxYjdjNGM4MGIzIjtzOjc6InZhbGlkYnkiO3M6NDA6ImQ4MTEzMzE4MzU4NDQ2MTdmYzcyZDU3ZDc5MGIyOTVmODcxMzRiMTEiO3M6NzoicmVnZnJvbSI7aToxO30iOw==
+ready to send mail
+status send = 1
+mail send a:3:{s:7:"message";s:17:"success send mail";s:6:"result";b:1;s:3:"res";b:1;}
+czoyMTE6ImE6NTp7czo1OiJlbWFpbCI7czoxNjoib3Zhbjg5QGdtYWlsLmNvbSI7czo4OiJ1c2VybmFtZSI7czo3OiJvdmFuY29wIjtzOjU6InRva2VuIjtzOjQwOiI2OWM3MTg2OWM0NDUwYjY2ZmVlNWIxNDUxYzQ3MGMxYjdjNGM4MGIzIjtzOjc6InZhbGlkYnkiO3M6NDA6ImQ4MTEzMzE4MzU4NDQ2MTdmYzcyZDU3ZDc5MGIyOTVmODcxMzRiMTEiO3M6NzoicmVnZnJvbSI7aToxO30iOw==

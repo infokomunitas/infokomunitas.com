@@ -1,0 +1,24 @@
+==success create user==
+sftp connected
+sftp move file to tmp
+delete current file
+sftp connected
+sftp failed move file to tmp
+sftp failed connected
+sftp failed move file to tmp
+Resource id #1
+connect=Resource id #1 user= pass=
+sftp failed connected
+connect=Resource id #1 user=nje pass=usertest
+sftp failed connected
+connect=Resource id #1 user=usertest pass=
+sftp failed connected
+connect=Resource id #2 user=usertest pass=usertest
+sftp connected
+sftp move file to tmp
+connect=Resource id #2 user=nje pass=usertest
+sftp failed connected
+connect=Resource id #1 user=usertest pass=usertest
+sftp connected
+sftp move file to tmp
+delete current file
