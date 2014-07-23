@@ -1,13 +1,19 @@
 {include file="meta.html"}
 <body>
-	<div>
-		{$content}
-	</div>
+	{if $page.page!='login'}
+    <div id="wrapper">
 	
-    <footer>
-		{include file="footer.html"}
+		{include file="menu.html"}
 		
-	</footer>
+     {/if}    
+	 
+		{$content}
+		
+		
+	{if $page.page!='login'}	
+	</div>
+	{/if} 
+
+
+	{include file="footer.html"}
 	
-</body> 
-</html>
