@@ -18,10 +18,10 @@ $CONFIG['default']['admin'] = false;
 $CONFIG['default']['salt'] = "12345678PnD";
 $CONFIG['default']['hostname'] = "10.10.200.115";
 
-$CONFIG['default']['base_url'] = 'http://localhost/infokomunitas/infokomunitas.com/';
-$CONFIG['default']['root_path'] = $_SERVER['DOCUMENT_ROOT'].'/infokomunitas/infokomunitas.com';
+$CONFIG['default']['base_url'] = 'http://localhost/infokomunitas/trunk/';
+$CONFIG['default']['root_path'] = $_SERVER['DOCUMENT_ROOT'].'/infokomunitas/trunk';
 
-$CONFIG['default']['upload_path'] = $_SERVER['DOCUMENT_ROOT'].'/infokomunitas/infokomunitas.com/tmp/';
+$CONFIG['default']['upload_path'] = $_SERVER['DOCUMENT_ROOT'].'/infokomunitas/trunk/tmp/';
 $CONFIG['default']['max_filesize'] = 2097152;
 $CONFIG['default']['upload_path_temporary'] = "/home/";
 $CONFIG['default']['zip_foldername'] = "PUT_YOUR_ZIP_HERE";
