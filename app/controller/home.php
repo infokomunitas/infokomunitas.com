@@ -20,6 +20,8 @@ class home extends Controller {
 	}
 	
 	function index(){
+
+		// pr($_SESSION);
     	return $this->loadView('home');
     }
 	

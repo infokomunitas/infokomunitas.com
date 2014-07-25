@@ -1,12 +1,18 @@
 {include file="meta.html"}
 <body>
+
+
 	{if $page.page!='login'}
     <div id="wrapper">
-	
-		{include file="menu.html"}
 		
-     {/if}    
-	 
+		{if $page.page!='setting' and $page.function!='setCategory'} 
+
+			{include file="menu.html"}
+		{/if}
+
+    {/if}    
+	
+	
 		{$content}
 		
 		

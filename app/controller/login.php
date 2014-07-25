@@ -118,38 +118,25 @@ class login extends Controller {
      * @todo enter the site as user
      */        
     function doLogin(){
-        $data = $_POST;
-        
+
+        global $basedomain;
         //query data
-        $getUserappData = $this->userHelper->getUserappData('username',$data['username'],1);
-        $getUserData = $this->userHelper->getUserData('id',$getUserappData['id']);
-        
-        $pwd = $data['password'];
-        
-        if(count($getUserData['id'])==1){
-            $checkPassword = $this->loginHelper->checkPassword($getUserData,$pwd);
-            if($checkPassword){
-                echo json_encode('success');
-                $data = array();
-                $data[] = array('person'=>$getUserData,'person_app'=>$getUserappData);
-                $startSession = $this->loginHelper->setSession($data, $pwd);
+        $getUserappData = $this->loginHelper->goLogin();
+        // pr($getUserappData);
+        if ($getUserappData){
+            
+            if ($getUserappData['login_count']>0){
+                redirect($basedomain);    
+            }else{
+                // echo 'ada';exit;
+                redirect($basedomain.'setting/category');
             }
-            else{
-                echo json_encode('error');
-            }
+            
         }
-		else{
-			echo json_encode('error');
-		}
-        exit; 
+
+        exit;
     }
     
-    /**
-     * @todo log out from site
-     */
-    function doLogout(){
-        $logout = $this->loginHelper->logoutUser(); 
-    }
 
 
 }

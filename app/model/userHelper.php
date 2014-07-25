@@ -5,7 +5,10 @@ class userHelper extends Database {
     {
         $session = new Session;
         $getSessi = $session->get_session();
-        $this->user = $getSessi['login'];
+        $this->user = $getSessi['default'];
+
+        $this->tblprefix = "infokomunitas";
+        $this->date = date('Y-m-d H:i:s');
     }
     
     /**
@@ -94,6 +97,29 @@ class userHelper extends Database {
         return $res; 
     }
 
-   
+    function getCategory()
+    {
+
+        $sql = "SELECT *
+                FROM {$this->tblprefix}_category
+                WHERE n_status =1
+                LIMIT 0 , 30";
+
+        $res = $this->fetch($sql,1);  
+        if ($res)return $res; 
+        return false;
+    }
+    
+    function setCategory($catID=array())
+    {
+        
+       
+        $sql = "INSERT IGNORE INTO {$this->tblprefix}_member_interest (userid, category_id, date_join, n_status)
+                VALUES ({$this->user['id']}, '{$catID}', '{$this->date}',1)";
+        // pr($sql);
+        $res = $this->query($sql);  
+        if ($res)return true; 
+        return false;
+    }
 }
 ?>

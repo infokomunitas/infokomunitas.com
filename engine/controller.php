@@ -81,7 +81,10 @@ class Controller extends Application{
 
 				}else{
 
-					if (!$this->isUserOnline())redirect($CONFIG[$this->configkey]['login']);
+					if (!$this->isUserOnline()){
+						redirect($CONFIG[$this->configkey]['login']);
+						exit;
+					}
 					
 				}
 
@@ -259,47 +262,7 @@ class Controller extends Application{
 		return $this->GETDB;
 	}
 	
-	/*Function Untuk Meload jumlah Data*/
-	function loadCountData($table,$categoryid=false,$articletype,$condition=false)
-
-	{
-		//	memanggil helper model yang sudah ada pada $GETDB
-		if (!$this->GETDB)$this->GETDB = new helper_model();
-		//	memanggil funtion getCountData yang terdapat pada model helper_model
-
-		$data = $this->GETDB->getCountData($table,$categoryid,$articletype,$condition);
-
-		$this->GETDB = null;
-		if ($data) return $data;
-		return false;
-	}
 	
-	function loadCountData_search($table,$search=false)
-	{
-		//	memanggil helper model yang sudah ada pada $GETDB
-		if (!$this->GETDB)$this->GETDB = new helper_model();
-		//	memanggil funtion getCountData yang terdapat pada model helper_model
-		$data = $this->GETDB->getCountData_search($table,$search);
-		
-		$this->GETDB = null;
-		if ($data) return $data;
-		return false;
-	}
-	
-	function sidebar($table,$content=1, $type=false, $start=0, $limit=5)
-	{
-		/*
-		content = categoryID
-		type 	= articleType
-		start 	= paging start
-		Limit 	= paging limit
-		*/
-		
-		if (!$this->GETDB)$this->GETDB = new helper_model();
-		$helper = $this->GETDB->getSidebar($table,$content, $type, $start, $limit);
-		if ($helper) return $helper;
-		return false;
-	}
 
 	function log($action='surf',$comment)
 	{
