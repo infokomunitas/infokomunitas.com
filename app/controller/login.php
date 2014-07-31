@@ -132,6 +132,8 @@ class login extends Controller {
                 redirect($basedomain.'setting/category');
             }
             
+        }else{
+            redirect($basedomain);
         }
 
         exit;
